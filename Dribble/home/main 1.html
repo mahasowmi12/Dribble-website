@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dribbble Email Verification</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#" class="logo">dribbble</a>
+      <ul>
+        <li><a href="#">Inspiration</a></li>
+        <li><a href="#">Find Work</a></li>
+        <li><a href="#">Learn Design</a></li>
+        <li><a href="#">Go Pro</a></li>
+        <li><a href="#">Hire Designers</a></li>
+        <li><a href="#" class="search-icon">&#128269;</a></li>
+        <li><a href="#" class="upload-btn">Upload</a></li>
+        <li><a href="#" class="user-icon">&#128100;</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <main>
+        <h1>Please verify your email...</h1>
+        <div class="email-verification">
+          <img src="image/envelope-icon.png.jpeg" alt="Envelope Icon">
+          <p>Please verify your email address. We've sent a confirmation email to:</p>
+          <input type="email" id="emailInput" placeholder="Enter your email address">
+          <p id="emailMessage"></p>
+          <button id="createAccountss"
+          style="background-color: #ff69b4; 
+          border: none; 
+          color: white; 
+          padding: 15px 32px;
+           text-align: center; 
+           text-decoration: none;
+            display: inline-block; 
+            font-size: 16px;
+             margin: 4px 2px; 
+             transition-duration: 0.4s; 
+             cursor: pointer; 
+             border-radius: 12px;"
+          >Verify</button>
+          
+          <script>
+            // Event listener for the button click
+            document.getElementById("createAccountss").addEventListener("click", function() {
+              // Redirect to the next page
+              window.location.href = "verify.html";
+            });
+          </script>
+          <p>Didn't receive the email? <a href="#" id="resendEmail">Resend the confirmation email</a>.</p>
+        </div>
+      </main>
+    
+    
+    
+      <p class="email-address">account@refero.design</p>
+      <p>Click the confirmation link in that email to begin using Dribbble.</p>
+      <p>Didn't receive the email? Check your Spam folder, it may have been caught by a filter. If you still don't see it, you can <a href="#" id="resendEmail">resend the confirmation email</a>.</p>
+      <p>Wrong email address? <a href="#">Change it</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="column">
+        <h3>For designers</h3>
+        <ul>
+          <li><a href="#">Go Pro!</a></li>
+          <li><a href="#">Explore design work</a></li>
+          <li><a href="#">Design blog</a></li>
+          <li><a href="#">Overtime podcast</a></li>
+          <li><a href="#">Playoffs</a></li>
+          <li><a href="#">Weekly Warm-Up</a></li>
+          <li><a href="#">Refer a Friend</a></li>
+          <li><a href="#">Code of conduct</a></li>
+        </ul>
+      </div>
+      <!-- Add more columns here for "Hire designers", "Company", "Directories", and "Design Resources" -->
+    </div>
+    <p class="footer-description">Dribbble is the world's leading community for creatives to share, grow, and get hired.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-dribbble"></i></a>
+    </div>
+    <p class="copyright">&copy; 2023 Dribbble. All rights reserved.</p>
+    <p class="shots-count">20,501,853 shots dribbbled</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

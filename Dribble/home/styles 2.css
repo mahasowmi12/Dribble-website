@@ -1,0 +1,77 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  header {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav .logo {
+    font-size: 1.5rem;
+ font-style: bold;
+font-family: cursive;
+    font-weight: bold;
+    color: #ea4c89;
+    text-decoration: none;
+  }
+  
+  main {
+    max-width: 1000px;
+    max-height: 50px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .options :hover {
+    background-color: #ea4c89;
+    color: #fff;
+    display: grid;
+    
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .option {
+    background-color: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: justify;
+  }
+  
+  .option img {
+    max-width: 30%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .option h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  button {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #ea4c89;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
