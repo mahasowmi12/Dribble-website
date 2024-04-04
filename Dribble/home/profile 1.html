@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Your Profile</title>
+    <link rel="stylesheet" href="styles 1.css">
+</head>
+<body>
+    <header>
+       
+        
+            <nav>
+              <a href="#" class="logo">dribbble</a>
+            </nav>
+          
+            
+         
+        
+        <h1 style="color: black; font-size: xx-large; font-family: cursive;font-style: italic ;font-display: bold;">Welcome! Let's create your profile </h1>
+        <p>Let others get to know you better! You can do these later</p>
+    </header>
+    <main>
+        <section>
+          <h2  style="font-family: cursive;">Upload Your Avatar Here</h2>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <div class="avatar-container">
+            <img id="preview" src="image/default-avatar.jpg"alt="Avatar Preview">
+        </div>
+        <input type="file" name="avatar" accept="image/*" onchange="previewAvatar(event)">
+        <button type="submit" name="submit"></button>
+    </form>
+
+    <script>
+        function previewAvatar(event) {
+            const reader = new FileReader();
+            reader.onload = function() {
+                const avatarPreview = document.getElementById('preview');
+                avatarPreview.src = reader.result;
+            }
+            reader.readAsDataURL(event.target.files[0]);
+        }
+    </script>
+         
+            <p>Or choose one of our defaults</p>
+        </section>
+        <section>
+            <h2 style="font-family: cursive;">Add your location</h2>
+            <input type="text" placeholder="Enter a location">
+        </section>
+        <button id="createAccount"
+style="background-color: #ff69b4; 
+border: none; 
+color: white; 
+padding: 15px 32px;
+ text-align: center; 
+ text-decoration: none;
+  display: inline-block; 
+  font-size: 16px;
+   margin: 4px 2px; 
+   transition-duration: 0.4s; 
+   cursor: pointer; 
+   border-radius: 12px;"
+>Next</button>
+
+<script>
+  // Event listener for the button click
+  document.getElementById("createAccount").addEventListener("click", function() {
+    // Redirect to the next page
+    window.location.href = "landing.html";
+  });
+</script>
+    </main>
+    <script src="script 1.js"></script>
+</body>
+</html>

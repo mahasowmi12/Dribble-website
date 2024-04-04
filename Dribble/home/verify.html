@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Email Verification</title>
+   <nav>
+    <a href="#" class="logo">dribbble</a>
+  </nav>
+   <style>
+       body {
+           font-family: Arial, sans-serif;
+           text-align: center;
+           padding: 20px;
+       }
+       nav .logo {
+    font-size: 1.5rem;
+ font-style: bold;
+font-family: cursive;
+    font-weight: bold;
+    color: #ea4cb3;
+    text-decoration: none;
+  }
+       .container {
+           max-width: 600px;
+           margin: 0 auto;
+           padding: 20px;
+           border: 1px solid #ccc;
+           border-radius: 5px;
+       }
+       
+       .success {
+           color: green;
+           font-weight: bold;
+       }
+       
+       .email-verified {
+           display: none;
+       }
+   </style>
+</head>
+<body>
+   <div class="container">
+       <h1 style="color: black; font-size: xx-large; font-family: cursive;font-style: italic ;font-display: bold;">Please verify your email...</h1>
+       <div class="email-verify">
+           <img src="image/envelope-icon.png.jpeg" alt="Email Icon" width="80" height="80">
+           <p>Please verify your email address. We've sent a confirmation email to:</p>
+           <p class="email-address">account@refero.design</p>
+           <p>Click the confirmation link in that email to begin using Dribbble.</p>
+           <p>Didn't receive the email? Check your Spam folder, it may have been caught by a filter. If you still don't see it, you can <a href="#" onclick="resendEmail()">resend the confirmation email</a>.</p>
+           <p>Wrong email address? <a href="#" onclick="changeEmail()">Change it</a>.</p>
+       </div>
+       <div class="email-verified">
+           <h2 class="success">Email verified successfully!</h2>
+           <p>Thank you for verifying your email address. You can now proceed to use our platform.</p>
+       </div>
+   </div>
+   
+   <script>
+       function resendEmail() {
+           // Code to resend the confirmation email
+           alert("Resend email functionality is not implemented in this example.");
+       }
+       
+       function changeEmail() {
+           // Code to change the email address
+           alert("Change email functionality is not implemented in this example.");
+       }
+       
+       // Simulating email verification after 3 seconds
+       setTimeout(function() {
+           document.querySelector(".email-verify").style.display = "none";
+           document.querySelector(".email-verified").style.display = "block";
+       }, 3000);
+   </script>
+</body>
+</html>
